@@ -52,6 +52,7 @@ public class NewMod {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.TIN);
             event.accept(ModItems.TOTORO);
+            event.accept(ModBlocks.TIN_BLOCK);
         }
     }
 
