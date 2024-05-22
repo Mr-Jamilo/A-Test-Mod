@@ -1,6 +1,7 @@
 package net.jamilo.newmod;
 
 import com.mojang.logging.LogUtils;
+import net.jamilo.newmod.block.ModBlocks;
 import net.jamilo.newmod.item.ModCreativeModeTabs;
 import net.jamilo.newmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -30,6 +31,7 @@ public class NewMod {
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

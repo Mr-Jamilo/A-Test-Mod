@@ -1,6 +1,7 @@
 package net.jamilo.newmod.item;
 
 import net.jamilo.newmod.NewMod;
+import net.jamilo.newmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -14,6 +15,7 @@ public class ModCreativeModeTabs {
     public static final RegistryObject<CreativeModeTab> CUSTOM_TAB = CREATIVE_MODE_TABS.register("custom_tab", () ->  CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.TOTORO.get())).title(Component.translatable("creativetab.custom_tab")).displayItems(((itemDisplayParameters, output) -> {
         output.accept(ModItems.TOTORO.get());
         output.accept(ModItems.TIN.get());
+        output.accept(ModBlocks.TIN_BLOCK.get());
     })).build());
 
     public static void register(IEventBus eventBus){
