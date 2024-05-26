@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "newmod:item/totoro"
+    "layer0": "newmod:item/raw_tin"
   }
 }

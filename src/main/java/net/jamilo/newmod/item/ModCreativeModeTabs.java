@@ -12,8 +12,8 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, NewMod.MODID);
 
-    public static final RegistryObject<CreativeModeTab> CUSTOM_TAB = CREATIVE_MODE_TABS.register("custom_tab", () ->  CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.TOTORO.get())).title(Component.translatable("creativetab.custom_tab")).displayItems(((itemDisplayParameters, output) -> {
-        output.accept(ModItems.TOTORO.get());
+    public static final RegistryObject<CreativeModeTab> CUSTOM_TAB = CREATIVE_MODE_TABS.register("custom_tab", () ->  CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.TIN.get())).title(Component.translatable("creativetab.custom_tab")).displayItems(((itemDisplayParameters, output) -> {
+        output.accept(ModItems.RAW_TIN.get());
         output.accept(ModItems.TIN.get());
         output.accept(ModBlocks.TIN_BLOCK.get());
     })).build());
