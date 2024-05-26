@@ -10,7 +10,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS,NewMod.MODID);
 
-    public static final RegistryObject<Item> TIN = ITEMS.register("tin", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TIN = ITEMS.register("tin_ingot", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> TOTORO = ITEMS.register("totoro", () -> new Item(new Item.Properties()));
 

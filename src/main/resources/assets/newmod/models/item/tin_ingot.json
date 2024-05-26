@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "newmod:item/tin"
+    "layer0": "newmod:item/tin_ingot"
   }
 }
